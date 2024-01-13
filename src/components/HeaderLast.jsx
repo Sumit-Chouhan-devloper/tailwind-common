@@ -26,7 +26,7 @@ const HeaderLast = () => {
               </div>
               <div className="hidden md:block">
                 <ul className="flex items-baseline ">
-                  <li >
+                  <li>
                     <a
                       href="#"
                       className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm  me-12"
@@ -34,7 +34,7 @@ const HeaderLast = () => {
                       TAB NAME
                     </a>
                   </li>
-                  <li >
+                  <li>
                     <a
                       href="#"
                       className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm  me-12"
@@ -58,12 +58,14 @@ const HeaderLast = () => {
                       TAB NAME
                     </a>
                   </li>
-                  <li><button className="md:flex hidden rounded-xl w-[164px] h-[48px] justify-center items-center font-inter text-[5vw] sm:text-[3vw] md:text-sm  leading-normal bg-blue   e border-2 transition-all duration-300 hover.text-blue font-semibold text-[#fff] hover:bg-white border-transparent hover:border-blue  hover:text-blue">
-                Button
-              </button></li>
+                  <li>
+                    <button className="md:flex hidden rounded-xl w-[164px] h-[48px] justify-center items-center font-inter text-[5vw] sm:text-[3vw] md:text-sm  leading-normal bg-blue   e border-2 transition-all duration-300 hover.text-blue font-semibold text-[#fff] hover:bg-white border-transparent hover:border-blue  hover:text-blue">
+                      Button
+                    </button>
+                  </li>
                 </ul>
               </div>
-              
+
               <div className="-mr-2 flex md:hidden">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
@@ -111,47 +113,50 @@ const HeaderLast = () => {
             </div>
           </div>
 
-          
-            <div className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen z-30 bg-red-300 top-0 ${isOpen ?" translate-x-0":"translate-x-[-100%]"}`} id="mobile-menu">
-              <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center h_mobile">
-                <li onClick={() => setIsOpen(!isOpen)}>
-                  <a
-                    href="#"
-                    className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm "
-                  >
-                    TAB NAME
-                  </a>
-                </li>
-                <li onClick={() => setIsOpen(!isOpen)}>
-                  <a
-                    href="#"
-                    className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm  "
-                  >
-                    TAB NAME
-                  </a>
-                </li>
-                <li onClick={() => setIsOpen(!isOpen)}>
-                  <a
-                    href="#"
-                    className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm "
-                  >
-                    TAB NAME
-                  </a>
-                </li>
-                <li onClick={() => setIsOpen(!isOpen)}>
-                  <a
-                    href="#"
-                    className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm  "
-                  >
-                    TAB NAME
-                  </a>
-                </li>
-                <button className="lg:hidden flex rounded-xl w-[164px] h-[48px] justify-center items-center font-inter sm:text-[16px] text-[14px] leading-normal    border-2 transition-all duration-300 hover.text-blue bg-blue font-semibold text-[#fff] hover:bg-white border-transparent hover:border-blue  hover:text-blue">
-                  Button
-                </button>
-              </ul>
-            </div>
-        
+          <div
+            className={`md:opacity-0 transition-all duration-500 fixed h-screen w-screen z-30 bg-red-300 top-0 ${
+              isOpen ? " translate-x-0" : "translate-x-[-100%]"
+            }`}
+            id="mobile-menu"
+          >
+            <ul className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col justify-center items-center h_mobile">
+              <li onClick={() => setIsOpen(!isOpen)}>
+                <a
+                  href="#"
+                  className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm "
+                >
+                  TAB NAME
+                </a>
+              </li>
+              <li onClick={() => setIsOpen(!isOpen)}>
+                <a
+                  href="#"
+                  className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm  "
+                >
+                  TAB NAME
+                </a>
+              </li>
+              <li onClick={() => setIsOpen(!isOpen)}>
+                <a
+                  href="#"
+                  className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm "
+                >
+                  TAB NAME
+                </a>
+              </li>
+              <li onClick={() => setIsOpen(!isOpen)}>
+                <a
+                  href="#"
+                  className="text-black relative after:content-['']  after:w-0 after:h-[2px] after:transition-all transition-all  after:ease-in-out ease-in-out after:duration-300 after:bg-[blue]  after:absolute after:bottom-[-4px] after:rounded-3xl hover:after:w-full hover:after:left-0 after:left-[50%]  font-inter hover:text-blue font-normal leading-normal rounded-md text-[5vw] sm:text-[3vw] md:text-sm  "
+                >
+                  TAB NAME
+                </a>
+              </li>
+              <button className="lg:hidden flex rounded-xl w-[164px] h-[48px] justify-center items-center font-inter sm:text-[16px] text-[14px] leading-normal    border-2 transition-all duration-300 hover.text-blue bg-blue font-semibold text-[#fff] hover:bg-white border-transparent hover:border-blue  hover:text-blue">
+                Button
+              </button>
+            </ul>
+          </div>
         </nav>
       </div>
     </>
